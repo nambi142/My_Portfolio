@@ -1,0 +1,299 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+  max-width: 1300px;
+  margin: auto;
+  background:linear-gradient(to bottom, skyblue,pink);
+  color: #333;
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0.5em;
+  background: #ffffff4d;
+  border-radius: 20px;
+  height: 80px;
+}
+
+.header h2 {
+  color: #000;
+}
+
+nav ul.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul.list li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+nav ul.list li a:hover{
+  color: #D4af37;
+}
+
+.home {
+  background-image: url(D:\coderprofession\my-portfolio\src\assets\googly.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;       
+  padding-right: 40px;      
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  text-align: center;   
+  color: white;
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  line-height: 0.30;
+}
+
+
+.Project, .About-Me, .core-skills,.react-skills,.tools, .getin, .contact-me {
+  margin: 40px 0;
+  color: #000000;
+}
+
+.name {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ecom, .todo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0000001a;
+  flex: 1;
+  min-width: 300px;
+}
+
+.About-Me{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0000001a;
+  flex: 1;
+  min-width: 300px;
+}
+
+.core-skills {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0000001a;
+  flex: 1;
+  min-width: 300px;
+
+}
+
+.react-skills{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0000001a;
+  flex: 1;
+  min-width: 300px;
+  list-style: none;
+}
+
+.tools{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0000001a;
+  flex: 1;
+  min-width: 300px;
+  list-style: none;
+}
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc0cb4d;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px #0000000d;
+}
+
+.contact-me h2 {
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.contact-me input,
+.contact-me textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-me textarea {
+  height: 120px;
+  resize: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-me button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me button:hover {
+  background-color: #0b5ed7;
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.164);
+  color: #000;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #000;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: goldenrod; /* React blue */
+}
+
+/* Mobile view*/
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav ul.list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .home {
+    height: 250px;
+    padding-right: 10px;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0 10px;
+    color: aliceblue;
+  }
+
+  .name {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ecom, .todo, .About-Me, .core-skills, .react-skills, .tools {
+    padding: 15px;
+    min-width: unset;
+  }
+
+  .contact-me {
+    padding: 1rem;
+  }
+
+  .contact-me input,
+  .contact-me textarea {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .contact-me button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 15px 5px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+}
+
