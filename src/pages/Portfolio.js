@@ -85,7 +85,7 @@ const PortfolioAppDetails = () => {
 
       <div className="buttons">
         <a
-          href="https://muthuNambi-portfolio.netlify.app/"
+          href="https://nambitechie.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn live-btn"
@@ -93,7 +93,7 @@ const PortfolioAppDetails = () => {
           🔗 View Live Site
         </a>
         <a
-          href="https://github.com/nambi142/myportfolio"
+          href="https://github.com/nambi142/My_Portfolio"
           target="_blank"
           rel="noopener noreferrer"
           className="btn code-btn"

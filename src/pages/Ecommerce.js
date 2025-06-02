@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../Css/ProjectDetails.css";
-import { FaShoppingCart, FaCamera } from "react-icons/fa";
+import { FaCamera } from "react-icons/fa";
 
 const Ecommerce = () => {
   const [selectedImage, setSelectedImage] = useState(null);
