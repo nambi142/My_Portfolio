@@ -66,7 +66,7 @@ nav ul.list li a:hover {
 }
 
 .home {
-  background-image: url(D:/coderprofession/my-portfolio/src/assets/googly.png);
+  background-image: url("../assets/googly.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
