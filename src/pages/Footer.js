@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/nambi_707/">
               <FaSquareInstagram />
             </a>
-            <a href="mailto:muthunambi4321@gmail.com">
+            <a href="mailto:muthu142001@gmail.com">
               <SiGmail />
             </a>
             <a
