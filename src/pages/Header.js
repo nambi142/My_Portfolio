@@ -92,7 +92,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="/resume.pdf" download="Muthu_Nambi_Resume.pdf">
+              <a href="/Technical_Resume.pdf" download="Technical_Resume.pdf">
                 Resume
               </a>
             </li>
