@@ -128,13 +128,33 @@ html {
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  margin-left: 70px;
 }
 
-/* Responsive Design */
+.project-sections-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Fix modal image alignment on mobile */
 @media screen and (max-width: 768px) {
   .project-details-container {
     padding: 1rem;
   }
+
+  .intro, .keyfeatures, .techstack, .hilights {
+  width: 100%;
+  max-width: 100%; /* Allow full width */
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* or center based on content */
+  box-sizing: border-box;
+  padding: 1rem; /* ensure spacing inside */
+}
+
 
   .buttons {
     flex-direction: column;
@@ -143,7 +163,7 @@ html {
   }
 
   .btn {
-    width: 50%;
+    width: 80%;
     text-align: center;
   }
 
@@ -155,4 +175,11 @@ html {
     width: 100%;
     max-width: 300px;
   }
+
+  .modal-content img {
+    margin-left: 0; /* Remove forced left margin */
+    margin: auto;
+    display: block;
+  }
 }
+
