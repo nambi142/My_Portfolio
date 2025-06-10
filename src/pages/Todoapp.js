@@ -21,7 +21,7 @@ const TodoAppDetails = () => {
           This is a modern and fully functional <strong>Todo App</strong> built with <strong>ReactJS</strong> and powered by a <strong>JSON Server</strong> backend. It uses advanced React techniques like <strong>Context API</strong> and <strong>useReducer</strong> for global state management. The frontend is deployed on Netlify and the backend JSON Server is deployed using Render.
         </p>
         <ul>
-          <li><strong>Frontend:</strong> Deployed on Netlify</li>
+          <li><strong>Frontend:</strong> Deployed on vercel</li>
           <li><strong>Backend:</strong> JSON Server hosted on Render</li>
           <li><strong>API Communication:</strong> Handled using Axios</li>
         </ul>
@@ -68,7 +68,7 @@ const TodoAppDetails = () => {
           <li>Axios</li>
           <li>React Router DOM</li>
           <li>Custom CSS3</li>
-          <li>Netlify</li>
+          <li>vercel</li>
           <li>Render</li>
           <li>Git & GitHub</li>
         </ul>

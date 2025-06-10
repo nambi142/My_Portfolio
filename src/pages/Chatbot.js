@@ -21,8 +21,8 @@ const ChatbotAppDetails = () => {
           This <strong>AI-powered Chatbot App</strong> is built using <strong>ReactJS</strong> for the frontend and integrated with a lightweight backend for conversation storage and bot responses. It features smooth conversational UI and real-time message handling, ideal for user support or interactive guidance. 
         </p>
         <ul>
-          <li><strong>Frontend:</strong> Hosted on Netlify</li>
-          <li><strong>Backend:</strong> Mock backend or API simulation</li>
+          <li><strong>Frontend:</strong> Hosted on vercel</li>
+          <li><strong>Backend:</strong> JSON Server hosted on Render</li>
           <li><strong>Messaging:</strong> Real-time UI rendering with message logs</li>
         </ul>
       </div>
@@ -64,7 +64,7 @@ const ChatbotAppDetails = () => {
           <li>ReactJS (Hooks, Functional Components)</li>
           <li>Custom CSS3</li>
           <li>React Icons</li>
-          <li>Netlify</li>
+          <li>vercel</li>
           <li>Git & GitHub</li>
         </ul>
       </div>

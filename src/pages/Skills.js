@@ -1,4 +1,3 @@
-import React from 'react'
 import '../Css/Home.css';
 const Skills = () => {
   return (
@@ -21,15 +20,9 @@ const Skills = () => {
                 <ul>
                 <li>React Fundamentals - Components, JSX, Props, State.</li>
                 <li>React Hooks - useState, useEffect, useContext, etc.</li>
-                <li>
-                    Component Lifecycle - Understanding how components mount, update,
-                    and unmount.
-                </li>
                 <li>Conditional Rendering - Dynamic UI based on logic</li>
                 <li>Form Handling - Controlled components and validation.</li>
-                <li>
-                    Lists and Keys - Rendering collections and maintaining identity.
-                </li>
+                <li>Lists and Keys - Rendering collections and maintaining identity.</li>
                 <li>React Router - Navigation and routing between views/pages.</li>
                 <li>Context API - Global state management.</li>
                 </ul>
@@ -40,7 +33,7 @@ const Skills = () => {
                 <ul>
                 <li>Git & GitHub</li>
                 <li>VS Code with React & AI dev extensions</li>
-                <li>NPM / Yarn, ESLint / Prettier</li>
+                <li>NPM</li>
                 <li>Chrome React DevTools</li>
                 </ul>
             </div>
