@@ -13,12 +13,13 @@ html {
   font-style: normal;
 }
 
+/* ---------- HEADER ---------- */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
-  height: 40px;
+  height: 50px;
   position: relative;
   z-index: 1001;
 }
@@ -65,27 +66,45 @@ nav ul.list li a:hover {
   position: relative;
 }
 
+/* ---------- HOME ---------- */
 .home {
   background-image: url("../assets/googly.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 400px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
-  padding-right: 40px;
+  text-align: end;
+  padding: 0 20px;
 }
 
 .home-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   color: #fff;
   font-family: "Zen Dots", sans-serif;
   font-weight: lighter;
   font-style: normal;
-  line-height: 0.30;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .home-text svg {
@@ -99,63 +118,101 @@ nav ul.list li a:hover {
   to { transform: rotate(360deg); }
 }
 
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+/* ---------- SECTIONS ---------- */
 .About-Me,
 .Project,
 .core-skills,
 .react-skills,
 .tools,
-.getin,
 .contact-me {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px #000;
+  padding: 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   margin: 40px 0;
   color: #000;
   flex: 1;
-  min-width: 300px;
 }
 
 .name {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.ecom, .todo, .portfolio, .chatbot {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px #000;
+/* ---------- PROFESSIONAL PROJECT CARDS ---------- */
+.ecom, .todo, .portfolio, .chatbot, .newbalance {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   flex: 1;
-  min-width: 200px;
-  transition: transform 0.3s ease;
+  min-width: 250px;
+  max-width: 350px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
-.ecom:hover, .todo:hover, .portfolio:hover, .chatbot:hover {
-  transform: translateY(-12px);
+.ecom:hover, .todo:hover, .portfolio:hover, .chatbot:hover, .newbalance:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
-.view-btn {
-  padding: 0.75rem 1.5rem;
-  background-color: #000;
-  border: none;
-  border-radius: 0.5rem;
+.ecom h3, .todo h3, .portfolio h3, .chatbot h3, .newbalance h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1368b8;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ecom p, .todo p, .portfolio p, .chatbot p, .newbalance p {
   font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+/* View Project button */
+.view-btn {
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(135deg, #1368b8, #51ccdf);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: linear-gradient(135deg, #51ccdf, #1368b8);
+  transform: scale(1.05);
 }
 
 .view-link {
   text-decoration: none;
   color: #fff;
+  display: block;
 }
 
+/* Optional accent lines */
+.ecom { border-top: 4px solid #ff9800; }
+.todo { border-top: 4px solid #388e3c; }
+.portfolio { border-top: 4px solid #6a1b9a; }
+.chatbot { border-top: 4px solid #d32f2f; }
+.newbalance { border-top: 4px solid #1368b8; }
+
+/* ---------- CONTACT FORM ---------- */
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -164,11 +221,10 @@ nav ul.list li a:hover {
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 12px #0000000d;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .contact-me h2 {
-  color: #000;
   margin-bottom: 1rem;
 }
 
@@ -201,7 +257,7 @@ nav ul.list li a:hover {
   border-radius: 0.5rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-me button:hover {
@@ -209,8 +265,9 @@ nav ul.list li a:hover {
   color: #000;
 }
 
+/* ---------- FOOTER ---------- */
 .footer {
-  background: rgba(255, 255, 255, 0.164);
+  background: rgba(255,255,255,0.16);
   color: #000;
   text-align: center;
   padding: 20px 10px;
@@ -239,23 +296,29 @@ nav ul.list li a:hover {
   color: #fff;
 }
 
-/* ---------- Responsive Design ---------- */
+/* ---------- MOBILE FIXES ---------- */
 @media (max-width: 768px) {
+
+  /* Container padding */
   .container {
     padding: 10px;
   }
 
-  .header {
-    padding: 10px 15px;
-  }
-
+  /* Hamburger icon visible */
   .hamburger {
     display: block;
-    align-items: center;
     position: absolute;
-    right: 10px;
+    right: 15px;
+    top: 15px;
+    z-index: 1100;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
   }
 
+  /* Menu adjustments */
   .menu {
     position: absolute;
     top: 60px;
@@ -268,26 +331,28 @@ nav ul.list li a:hover {
     justify-content: center;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease;
     z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
   .menu.open {
-    max-height: 300px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-height: 400px; /* enough to show all menu items */
+    padding: 15px 0;
   }
 
+  /* Navigation list adjustments */
   nav ul.list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px 0;
     width: 100%;
+    padding: 0;
     margin: 0;
   }
 
   nav ul.list li {
-    margin: 10px 0;
+    margin: 12px 0;
   }
 
   nav ul.list li a {
@@ -299,42 +364,65 @@ nav ul.list li a:hover {
     color: goldenrod;
   }
 
+  /* Home section adjustments */
   .home {
     height: 300px;
-    width:auto;
-    padding: 10px 10px 10px 10px;
-    background-position:left;
     justify-content: center;
     text-align: center;
+    padding: 10px;
+    background-position: center;
   }
 
   .home-text {
     font-size: 0.9rem;
     font-weight: bold;
     line-height: 1.2;
-    background-color: #00000080; 
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 10px;
+    border-radius: 8px;
     width: 100%;
-    height:100%;
-    color: #fff;
-    display: inline-block;
   }
 
   .home-text svg {
     font-size: 3rem;
     color: skyblue;
-    animation: spin 5s linear infinite;
   }
 
+  /* Projects and cards responsive */
+  @media (max-width: 768px) {
+
+  /* Container for project cards */
   .name {
-    flex-direction: column;
-    gap: 20px;
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 15px; /* small gap between cards */
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
-  .ecom, .todo, .About-Me, .core-skills, .react-skills, .tools {
+  /* Individual cards */
+  .ecom, .todo, .portfolio, .chatbot, .newbalance {
+    width: 100%; /* full width of container */
+    max-width: 100%;
+    min-width: 0; /* remove min-width to prevent overflow */
+    margin: 0; /* remove unwanted horizontal margins */
+    box-sizing: border-box; /* include padding in width */
+  }
+}
+
+
+  /* About Me and Skills sections responsive */
+  .About-Me,
+  .core-skills,
+  .react-skills,
+  .tools {
     padding: 15px;
     min-width: unset;
   }
 
+  /* Contact form responsive */
   .contact-me {
     padding: 1rem;
   }
@@ -358,6 +446,7 @@ nav ul.list li a:hover {
     font-size: 1rem;
   }
 
+  /* Footer adjustments */
   .footer {
     padding: 15px 5px;
   }
@@ -367,3 +456,4 @@ nav ul.list li a:hover {
     margin: 0 5px;
   }
 }
+
